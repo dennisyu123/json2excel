@@ -23,7 +23,7 @@ String json = ResultSetToJson.ResultSetToJsonString(resultSet);
 Json Object to Excel
 
 ```
-HttpResponse<JsonNode> getJsonNode = Unirest.get("https://yourapi.com/getsomething".asJson();
+HttpResponse<JsonNode> getJsonNode = Unirest.get("https://yourapi.com/getsomething").asJson();
 
 JsonObjectToExcel jsonObjectToExcel = new JsonObjectToExcel();
 HSSFWorkbook hssfWorkbook = jsonObjectToExcel.dump(getJsonNode);
